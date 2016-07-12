@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from portafolio.views import *
 
-urlpatterns = [
+urlpatterns = [	
 	url(r'^$', index),
     url(r'^admin/', admin.site.urls),
     

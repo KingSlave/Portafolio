@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'app.css' %}">
+	<title>Inicio de sesion</title>	
+</head>
+<body>	
+<div class="container-fluid">
+<div class="row" id="flogin">
+<div class="izq" class="col-md-6">
+<div class="col-md-4 panel panel-default" >
+	<div class="panel-heading" style="background-color:#58DC71">
+		<h3 class="panel-title">Portafolios ITSH</h3>
+	</div>
+	<div class="panel-body">
+		<form action="" method="POST" role="form">
+		<legend>Inicio de sesion</legend>	
+		<div class="form-group">
+			<label for="">Usuario</label>
+			<input type="text" class="form-control" id="" placeholder="ejemplo:02020122" name="usuario" required>
+		</div>
+		<div class="form-group">
+			<label for="">Contraseña</label>
+			<input type="password" name="pass" id="input" class="form-control" required>
+		</div>			
+		<button type="submit" class="btn btn-primary">Entrar</button>
+	</form>	
+	</div>
+</div>
+		<div class="der" class="col-md-6" id="logo">
+				<figure>									
+					<img src="{% static 'img/logo.png' %}" alt="ITSH">
+				</figure>
+		</div>
+</div>
+</div>
+	</div>
+</body>
+</html>
